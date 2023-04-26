@@ -1,0 +1,47 @@
+body {
+    margin: 0px !important;
+}
+
+.header {
+    background: #00B7EB;
+}
+
+.hero {
+    background: #FF0000;
+}
+
+.content {
+    background: #00FF00;
+}
+
+.sidebar {
+    background: #800080;
+}
+
+.footer {
+    background: #444444;
+}
+
+.wrapper {
+    display: flex;
+    text-transform: uppercase;
+    /*flex-direction: column;*/
+    text-align: center;
+    height: 100vh;
+    align-content: stretch;
+    flex-wrap: wrap;
+}
+
+.wrapper div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 640px){
+    .wrapper > div.content,
+    .wrapper > div.sidebar {
+        width: 50%; 
+    }
+}
